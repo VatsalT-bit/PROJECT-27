@@ -1,5 +1,5 @@
 class Rope {
-     constructor (body1,body2,offsetX,offsetX)
+     constructor (body1,body2,offsetX,offsetY)
 {
      this.offsetX=offsetX
      this.offsetY=offsetY
@@ -9,7 +9,7 @@ class Rope {
         pointB:{x:this.offsetX,y:this.offsetY}
      }
      this.rope=Constraint.create(options);
-     world.add(world,this.rope);
+     World.add(world,this.rope);
 
    }
    display(){   

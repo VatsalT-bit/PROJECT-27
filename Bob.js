@@ -4,7 +4,6 @@ class Bob{
             'restitution':0.3,
             'friction':0,
             'density':1.2,
-            isStatic:true
         }
         this.r=r;
         this.x=x;
@@ -15,7 +14,7 @@ class Bob{
       display(){
         push();
         translate(this.body.position.x, this.body.position.y);
-        fill("red")
+        fill("cyan")
         ellipseMode(CENTER);
         ellipse( 0, 0, this.r, this.r);
         pop();
